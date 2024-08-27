@@ -65,7 +65,7 @@ def transform(document, inenglishtext)
       end
     end
 
-    document.content.gsub!(/<<([^>>]+?)>>/i) do |match|
+    document.content.gsub!(/<<(.+?)>>/i) do |match|
         '[' + Regexp.last_match[1] +']'
     end
 

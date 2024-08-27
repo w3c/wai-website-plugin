@@ -2,8 +2,8 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "wai-website-plugin"
-  spec.version       = "0.1.2"
-  spec.authors       = ["Eric Eggert"]
+  spec.version       = "0.1.3"
+  spec.authors       = ["Eric Eggert","Kevin White","Rémi Bétin"]
   spec.email         = ["ee@w3.org"]
 
   spec.summary       = ""
