@@ -2,17 +2,6 @@
 
 # Prep: If a page has no language, add English language as default (unintended consequences)
 
-# Jekyll::Hooks.register :site, :post_read do |site|
-  # Jekyll.logger.debug "Eric’s SITE HOOK"
-  # site.documents.each do |document|
-    # Jekyll.logger.debug "Eric’s HOOK before:", document.data['lang']
-    # if document.data['lang'].nil?
-      # document.data['lang'] = 'en'
-    # end
-    # Jekyll.logger.debug "Eric’s HOOK after:", document.data['lang']
-  # end
-# end
-
 def getPage (site, ref, lang = "en")
   translatedpages = site.documents.find_all {|a| a.data['ref'] == ref}
   translatedpages = translatedpages.concat(site.pages.find_all {|a| a.data['ref'] == ref})
