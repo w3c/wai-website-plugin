@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "wai-website-plugin"
-  spec.version       = "0.3.1"
+  spec.version       = "0.3.2"
   spec.authors       = ["Eric Eggert", "Rémi Bétin"]
   spec.email         = ["wai@w3.org"]
 
@@ -15,5 +15,5 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = ">= 3.3.3"
 
   spec.add_runtime_dependency "jekyll", "~>4.4.1"
-  spec.add_runtime_dependency "nokogiri", '~>1.19.3'
+  spec.add_runtime_dependency "nokogiri", '~>1.19.4'
 end
